@@ -1,0 +1,20 @@
+.photo {
+  margin: 2.5em auto;
+  text-align: center;
+  .lg {
+    width: auto;
+    height: auto;
+    max-width: calc(100% - 40px);
+  }
+  .sm {
+    width: 100%;
+    height: auto;
+  }
+  .label {
+    line-height: 1.4;
+    color: #a4a4a4;
+    margin: 0;
+    margin-top: 0.5em;
+    font-size: 16px;
+  }
+}

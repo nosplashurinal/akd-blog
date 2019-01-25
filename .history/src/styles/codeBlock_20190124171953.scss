@@ -1,0 +1,17 @@
+@import "globals.scss";
+
+.code-block {
+  background-color: #23241f;
+  height: calc(100% - 40px);
+  overflow: auto;
+  text-align: left;
+  padding: 20px;
+  pre {
+    margin: 0;
+    code {
+      overflow: visible;
+      min-height: 100vh;
+      background: none;
+    }
+  }
+}

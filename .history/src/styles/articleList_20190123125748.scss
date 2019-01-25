@@ -1,0 +1,15 @@
+.article-list {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: gray;
+  .content {
+    padding: 10px;
+    .title {
+      text-transform: uppercase;
+    }
+    .list {
+      
+    }
+  }
+}

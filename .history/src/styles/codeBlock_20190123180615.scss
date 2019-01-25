@@ -1,0 +1,14 @@
+@import "globals.scss";
+
+.code-block {
+  // background-color: $editor-black;
+  text-align: left;
+  overflow: scroll;
+  height: 100vh;
+  pre {
+    margin: 0;
+    code {
+      padding-left: 20px;
+    }
+  }
+}

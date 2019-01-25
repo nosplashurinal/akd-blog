@@ -1,0 +1,27 @@
+@import "globals.scss";
+
+.code-block {
+  background-color: #23241f;
+  height: 100%;
+  overflow: auto;
+  text-align: left;
+  position: relative;
+  pre {
+    margin: 0;
+    code {
+      padding-left: 20px;
+      overflow: visible;
+      min-height: 100vh;
+      background: none;
+    }
+  }
+  .one-click-copy {
+    position: absolute;
+    top: 0;
+    right: 0;
+    i {
+      width: 40px;
+      height: auto;
+    }
+  }
+}

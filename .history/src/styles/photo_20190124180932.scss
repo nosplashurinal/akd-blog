@@ -1,0 +1,13 @@
+.photo {
+  margin: 1em auto;
+  text-align: center;
+  .lg {
+    width: auto;
+    height: auto;
+    max-width: calc(100% - 40px);
+  }
+  .sm {
+    width: 100%;
+    height: auto;
+  }
+}

@@ -1,0 +1,11 @@
+.content {
+  display: flex;
+  height: 100vh;
+  .akd-article {
+    flex: 0 1 100%;
+  }
+  .code-block {
+    max-width: 450px;
+    flex: none;
+  }
+}

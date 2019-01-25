@@ -1,0 +1,15 @@
+@import "globals.scss";
+
+.code-block {
+  background-color: 
+  height: 100%;
+  overflow: auto;
+  text-align: left;
+  pre {
+    code {
+      overflow: visible;
+      min-height: 100vh;
+      background: none;
+    }
+  }
+}
