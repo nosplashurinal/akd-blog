@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
+import router from './router'
 
 // Styling for code
 import VueHighlightJS from 'vue-highlightjs'
@@ -14,4 +15,5 @@ Vue.use(VueHighlightJS)
 
 new Vue({
   render: h => h(App),
+  router,
 }).$mount('#app')

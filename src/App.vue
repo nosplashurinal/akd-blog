@@ -1,22 +1,26 @@
 <template>
   <div id="app">
     <ArticleList/>
-    <Content/>
+    <div class="content-wrapper">
+      <router-view></router-view>
+    </div>
   </div>
 </template>
 
 <script>
-import ArticleList from "./components/ArticleList.vue";
-import Content from "./components/Content.vue";
+import ArticleList from "@/components/ArticleList.vue";
 
 export default {
   name: "app",
   components: {
-    ArticleList,
-    Content
+    ArticleList
   }
 };
 </script>
 
 <style lang="scss" src="@/styles/app.scss">
 </style>
+<style lang='scss' src='@/styles/content.scss'></style>
+<style lang='scss' src='@/styles/article.scss'></style>
+
+
