@@ -1,8 +1,8 @@
 <template>
   <div class="photo">
     <picture>
-      <source media="(max-width: 768px)" class="sm" :srcset="src">
-      <img class="lg" :src="src" :alt="alt">
+      <source media="(max-width: 768px)" :srcset="src">
+      <img :src="src" :style="`width:${width}`" :alt="alt">
     </picture>
     <p class="label" v-if="label">{{label}}</p>
   </div>
@@ -12,6 +12,10 @@ export default {
   name: "Image",
   props: {
     src: String,
+    width: {
+      default: "auto",
+      type: String
+    },
     alt: {
       default: "image",
       type: String

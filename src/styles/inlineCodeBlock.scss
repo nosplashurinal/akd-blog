@@ -1,6 +1,5 @@
-@import "globals.scss";
-
-.code-container {
+.inline-code-container {
+  width: calc(100% - 20px);
   position: relative;
   .one-click-copy {
     opacity: 0;
@@ -16,9 +15,10 @@
   }
 }
 
-.code-block {
+.inline-code-block {
   background-color: #23241f;
-  height: 100%;
+  width: 100%;
+  height: auto;
   overflow: auto;
   text-align: left;
   pre {
@@ -26,7 +26,6 @@
     code {
       padding-left: 20px;
       overflow: visible;
-      min-height: 100vh;
       background: none;
     }
   }

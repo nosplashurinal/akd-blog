@@ -1,14 +1,10 @@
 .photo {
   margin: 2.5em auto;
   text-align: center;
-  .lg {
+  img, source {
     width: auto;
     height: auto;
     max-width: calc(100% - 40px);
-  }
-  .sm {
-    width: 100%;
-    height: auto;
   }
   .label {
     line-height: 1.4;

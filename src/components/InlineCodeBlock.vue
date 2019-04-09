@@ -1,16 +1,16 @@
 <template>
-  <div class="code-container">
-    <div class="code-block">
+  <div class="inline-code-container">
+    <div class="inline-code-block">
       <pre v-highlightjs><code :class="lang">{{code}}</code></pre>
     </div>
-    <OneClickCopyButton :textToCopy="code" />
+    <OneClickCopyButton :textToCopy="code"/>
   </div>
 </template>
 <script>
 import OneClickCopyButton from "./OneClickCopyButton.vue";
 
 export default {
-  name: "CodeBlock",
+  name: "InlineCodeBlock",
   props: {
     code: String,
     lang: String
@@ -20,4 +20,4 @@ export default {
   }
 };
 </script>
-<style lang='scss' src='@/styles/codeBlock.scss'></style>
+<style lang='scss' src='@/styles/inlineCodeBlock.scss'></style>

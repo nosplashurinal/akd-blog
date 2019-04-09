@@ -1,0 +1,20 @@
+.one-click-copy {
+  position: absolute;
+  top: 0;
+  right: 0;
+  outline: 0;
+  border: 2px solid #f0f0f0;
+  padding: 10px;
+  margin: 10px 24px;
+  border-radius: 6px;
+  background: transparent;
+  transition: opacity ease 300ms;
+  cursor: pointer;
+  color: #f0f0f0;
+  font-size: 14px;
+  font-family: sans-serif;
+  img {
+    width: 24px;
+    height: auto;
+  }
+}
