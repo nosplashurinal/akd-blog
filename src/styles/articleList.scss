@@ -1,6 +1,10 @@
 @import "globals.scss";
 
 .article-list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 175px;
   height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
@@ -8,6 +12,7 @@
   color: #f0f0f0;
   text-align: left;
   font-size: 14px;
+  padding-top: 48px;
   .list-item {
     padding: 10px;
     text-overflow: ellipsis;
@@ -27,6 +32,25 @@
         font-size: 16px;
         position: relative;
       }
+      &.active .list {
+        color: #F2B900;
+      }
+    }
+  }
+}
+
+.mobile {
+  .article-list {
+    height: calc(100% - 48px);
+    &:before {
+      position: fixed;
+      top: 0;
+      background: #606060;
+      height: 48px;
+      width: 175px;
+      content: '';
+      display: block;
+      z-index: 1;
     }
   }
 }

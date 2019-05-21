@@ -22,5 +22,6 @@ export default new Router({
       name: '404Page',
       component: ErrorPage
     }
-  ]
+  ],
+  linkExactActiveClass: 'active'
 });

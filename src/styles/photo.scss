@@ -14,3 +14,16 @@
     font-size: 16px;
   }
 }
+
+.mobile {
+  .photo {
+    text-align: left;
+    img, source {
+      max-width: calc(100% - 20px);
+    }
+  }
+  .label {
+    text-align: center;
+    width: calc(100% - 20px);
+  }
+}

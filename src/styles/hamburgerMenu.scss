@@ -1,0 +1,70 @@
+@import "globals.scss";
+
+.hamburger-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  button.menu {
+    background: #606060;
+    display: flex;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    top: 4px;
+    left: 4px;
+    position: absolute;
+    .icon {
+      width: 24px;
+      height: auto;
+    }
+  }
+  button.close {
+    width: 48px;
+    height: 48px;
+    top: 4px;
+    left: 116px;
+    position: absolute;
+    .icon {
+      width: 32px;
+      height: auto;
+    }
+  }
+  .article-list {
+    position: fixed;
+    width: 175px;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: #606060;
+    color: #f0f0f0;
+    text-align: left;
+    font-size: 14px;
+    .list-item {
+      padding: 10px;
+      text-overflow: ellipsis;
+      .title {
+        text-transform: uppercase;
+        font-family: sans-serif;
+        letter-spacing: 0.5px;
+        margin: 10px 0;
+      }
+      a {
+        color: #f0f0f0;
+        cursor: pointer;
+        text-decoration: none;
+        .list {
+          font-family: $font;
+          padding-bottom: 8px;
+          font-size: 16px;
+          position: relative;
+        }
+      }
+    }
+  }
+  .maximize-enter-active, .maximize-leave-active {
+    transition: transform 250ms;
+  }
+  .maximize-enter, .maximize-leave-to {
+    transform: translateX(-175px);
+  }
+}
